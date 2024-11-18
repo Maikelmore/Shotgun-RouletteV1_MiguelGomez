@@ -1,27 +1,29 @@
-import java.util.Random;
+//import java.util.Random;        // importo Todas las cosas que me puedan hacer falta para tenerlas a mano 
 import java.util.Scanner;
 //import java.io.BufferedReader;
 //import java.io.InputStreamReader;
 //import java.io.IOException;
 public class App{
-    public static void main(String[] args){
+    public static void main(String[] args){ // Básico de java 
 
-        Random random = new Random();
+        //Random random = new Random();
+        // He creado todas las variables que me hacian falta para el desarollo del juego como numero de vidas tipos de cartuchos y nombre de entre otras 
+        // Hay muchas que no estan en uso por que las funciones han ido apareciendo y desapareciendo que he mantido por si acaso 
         int selecciónmenu;
         int selecciónjugadores;
         int seleccióndificultad;
         int cartuchosminimos=3;
-        int cartuchosmaximos=5;
+        //int cartuchosmaximos=5;
         int vidasmaquina=0;
         int vidasjugador1=0;
         int numerocartucho=0;
         int elecciónjugador;
-        boolean[]cartuchos= new boolean[numerocartucho] ;
+        //boolean[]cartuchos= new boolean[numerocartucho] ;
         boolean dowhile=true;
         boolean dowhile2= true;
         String Nombrejugador = "";
-        String Historia="Tengo una enfermedad extraña psiconoseque , me gusta jugar a este juego y como nadie quiere jugar conmigo pues secuetro a gente y la obligo a jugar por su vida a dia de hoy nadie me ha ganado";
-        String objetos=" No se pueden usar a menos que pases a la segunda fase";
+        String Historia="-'Tengo una enfermedad extraña psiconoseque , me gusta jugar a este juego y como nadie quiere jugar conmigo pues secuetro a gente y la obligo a jugar por su vida a dia de hoy nadie me ha ganado'";
+        String objetos="-'No se pueden usar a menos que pases a la segunda fase no creo que llegues tan lejos'";
         
         Scanner lector = new Scanner (System.in);
         System.out.println("\r\n" + //
@@ -63,9 +65,9 @@ public class App{
                     "         \\  \\      \\        /");
         System.out.println("-'Menos mal pensaba que me habia pasado con el Sonifero y te había matado'");
         System.out.println("-'No se como te llamas, ya que vamos a hacer esto al menos quiero saber como te llamas'");
-        System.out.println("-'Yo soy Maikel'");
         Nombrejugador = lector.nextLine();
         System.out.println("-'Ah te llamas "+ Nombrejugador +" me gustaria poder decirte que es un nombre bonito pero mi religión no me permite mentir' ");
+        System.out.println("-'Yo soy Maikel'");
         
         do{
             System.out.println("-'Bueno que quieres hacer'");
@@ -96,14 +98,14 @@ public class App{
                                 case 1:
                                     System.out.println("-'Bueno okaaay como tu digas'");
                                     vidasjugador1=3;
-                                    System.out.println(vidasjugador1);
+                                    System.out.println("Se han confugrado las vidas del jugador a "+vidasjugador1+ " vidas");
                                     vidasmaquina=3;
-                                    System.out.println(vidasmaquina);
+                                    System.out.println("Se han confugrado las vidas de Maikel a " +vidasmaquina+" vidas");
                                     numerocartucho=5;
-                                    System.out.println(numerocartucho);
+                                    System.out.println("Se ha configurado los cartuchos maximo dentro de la escopeta a "+numerocartucho);
                                     cartuchosminimos=3;
-                                    System.out.println(cartuchosminimos);
-                                    cartuchosmaximos=5;
+                                    System.out.println("Se ha configurado los cartuchos reales minimos dentro de la escopeta a "+cartuchosminimos);
+                                    //cartuchosmaximos=5;
                                     //int[] cartuchos_escopeta_facil = {0,0,0,0,0};
                                     //int suma_cartuchos_facil = 0;  
                                         //do {
@@ -156,7 +158,7 @@ public class App{
                                     vidasjugador1=5;
                                     vidasmaquina=5;
                                     numerocartucho=10;
-                                    int tipocartuchodificil=(int)(Math.random()); 
+                                    //int tipocartuchodificil=(int)(Math.random()); 
                                     //Juego completo dificl           
 
                                     break;
